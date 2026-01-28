@@ -1,0 +1,43 @@
+.card {
+   background: linear-gradient(180deg, #164a6a, #123d5a);
+   border-radius: 16px;
+   padding: 20px;
+   box-shadow: 0 8px 24px rgba(0, 23, 31, 0.08);
+}
+
+.title {
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: 16px;
+   color: #ffffff;
+}
+
+.items {
+   display: flex;
+   gap: 16px;
+}
+
+.item {
+   display: flex;
+   justify-content: space-between;
+   flex: 1;
+   padding: 10px 12px;
+   border-radius: 10px;
+   background: #f3f7fa;
+}
+
+.ok {
+   color: #16a34a;
+   font-weight: 600;
+}
+
+.fail {
+   color: #dc2626;
+   font-weight: 600;
+}
+
+.coverage {
+   margin-top: 12px;
+   font-size: 13px;
+   color: #a8c2d58e;
+}

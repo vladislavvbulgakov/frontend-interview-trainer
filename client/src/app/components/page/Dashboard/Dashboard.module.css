@@ -1,0 +1,30 @@
+.dashboard {
+   padding: 16px 32px 32px 32px;
+}
+
+.title {
+   font-size: 28px;
+   font-weight: 600;
+   margin-bottom: 8px;
+   color: #00171f;
+   font-weight: 600;
+}
+
+.subtitle {
+   margin-top: 8px;
+   color: #5f7d95;
+   max-width: 720px;
+   font-size: 0.875rem;
+}
+.mainContent {
+   margin-top: 1.5rem;
+
+   gap: 12px;
+   display: flex;
+   flex-direction: column;
+}
+.gridTwo {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 12px;
+}

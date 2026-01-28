@@ -1,0 +1,33 @@
+.page {
+   padding: 16px 32px 32px 32px;
+}
+
+.title {
+   font-size: 28px;
+   font-weight: 600;
+   margin-bottom: 8px;
+   color: #00171f;
+   font-weight: 600;
+}
+
+.subtitle {
+   margin-top: 8px;
+   color: #5f7d95;
+   max-width: 720px;
+   font-size: 0.875rem;
+}
+
+.filters {
+   margin: 24px 0;
+   padding: 16px;
+   border-radius: 12px;
+   background: #f3f7fa;
+   color: #94a3b8;
+   font-size: 13px;
+}
+
+.list {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   gap: 20px;
+}

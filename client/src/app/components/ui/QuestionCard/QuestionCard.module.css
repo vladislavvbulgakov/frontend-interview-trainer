@@ -1,0 +1,118 @@
+.card {
+   position: relative;
+   z-index: 1;
+
+   background: linear-gradient(135deg, rgba(0, 52, 89, 0.9), #105e95e7);
+
+   border-radius: 14px;
+   padding: 16px;
+
+   min-height: 150px;
+
+   box-shadow: 0 6px 18px rgba(0, 23, 31, 0.06);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 10px 26px rgba(0, 23, 31, 0.12);
+}
+
+.meta {
+   font-size: 11px;
+   font-weight: 500;
+   color: #ffffff;
+   opacity: 0.6;
+}
+
+.question {
+   font-size: 16px;
+   font-weight: 600;
+   color: #fff;
+   line-height: 1.45;
+
+   margin: 8px 0 14px;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.status {
+   padding: 6px 12px;
+   border-radius: 999px;
+
+   font-size: 12px;
+   font-weight: 500;
+
+   display: inline-flex;
+   align-items: center;
+}
+
+.grades {
+   display: flex;
+   gap: 6px;
+}
+
+.grade {
+   min-width: 26px;
+   height: 26px;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 999px;
+   font-size: 12px;
+   font-weight: 600;
+}
+.JUNIOR {
+   color: #facc15;
+   border: 1px solid rgba(250, 204, 21, 0.6);
+   background: rgba(250, 204, 21, 0.12);
+}
+.MIDDLE {
+   color: #38bdf8;
+   border: 1px solid rgba(56, 189, 248, 0.6);
+   background: rgba(56, 189, 248, 0.05);
+}
+.SENIOR {
+   color: #fc492e;
+   border: 1px solid rgba(251, 113, 113, 0.55);
+   background: rgba(231, 27, 27, 0.14);
+}
+.CONFIDENT {
+   color: #1dcc5e;
+   background: rgba(22, 163, 74, 0.12);
+   border: 1px solid rgba(22, 163, 74, 0.35);
+}
+
+.DOUBT {
+   color: #f5ac2f;
+   background: rgba(245, 158, 11, 0.14);
+   border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.DONT_KNOW {
+   color: #d96262;
+   background: rgba(232, 26, 26, 0.14);
+   border: 1px solid rgba(179, 82, 82, 0.4);
+}
+
+.NOT_ANSWERED {
+   color: rgba(255, 255, 255, 0.55);
+   border: 1px solid rgba(255, 255, 255, 0.25);
+   background: rgba(255, 255, 255, 0.08);
+}
+.CONFIDENT:hover,
+.DOUBT:hover,
+.DONT_KNOW:hover {
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.05);
+}

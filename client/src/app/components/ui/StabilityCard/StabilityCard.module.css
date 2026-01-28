@@ -1,0 +1,24 @@
+.card {
+   background: linear-gradient(180deg, #164a6a, #123d5a);
+   border-radius: 16px;
+   padding: 20px;
+   box-shadow: 0 8px 24px rgba(0, 23, 31, 0.08);
+}
+
+.title {
+   font-size: 16px;
+   font-weight: 600;
+   color: #ffffff;
+}
+
+.value {
+   font-size: 36px;
+   font-weight: 700;
+   color: var(--color-highlight);
+   margin: 12px 0;
+}
+
+.caption {
+   font-size: 13px;
+   color: #a8c2d58e;
+}

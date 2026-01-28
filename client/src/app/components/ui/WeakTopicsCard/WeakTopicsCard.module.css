@@ -1,0 +1,32 @@
+.card {
+   background: linear-gradient(180deg, #164a6a, #123d5a);
+   border-radius: 16px;
+   padding: 20px;
+   box-shadow: 0 8px 24px rgba(0, 23, 31, 0.08);
+   margin-top: 12px;
+}
+
+.title {
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: 12px;
+   color: #ffffff;
+}
+
+.list {
+   display: flex;
+   gap: 8px;
+   flex-wrap: wrap;
+}
+
+.list li {
+   background: #f3f7fa;
+   padding: 6px 10px;
+   border-radius: 999px;
+   font-size: 13px;
+}
+
+.empty {
+   font-size: 13px;
+   color: #72adff;
+}

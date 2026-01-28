@@ -1,0 +1,38 @@
+:root {
+   /* Colors */
+   --color-white: #ffffff;
+   --color-dark: #00171f;
+   --color-primary: #003459;
+   --color-accent: #007ea7;
+   --color-highlight: #00a8e8;
+
+   /* Backgrounds */
+   --bg-main: var(--color-white);
+   --bg-sidebar: var(--color-dark);
+   --bg-header: var(--color-white);
+
+   /* Text */
+   --text-primary: var(--color-dark);
+   --text-secondary: #4b5563;
+   --text-inverse: var(--color-white);
+
+   /* Fonts */
+   --font-main: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+   /* Sizes */
+   --header-height: 64px;
+   --sidebar-width: 260px;
+
+   /* Radius */
+   --radius-sm: 6px;
+   --radius-md: 10px;
+   --radius-lg: 16px;
+
+   /* Shadows */
+   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+   /* Transitions */
+   --transition-base: 0.2s ease;
+}

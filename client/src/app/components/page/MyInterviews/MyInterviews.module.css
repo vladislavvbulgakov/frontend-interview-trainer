@@ -1,0 +1,141 @@
+.page {
+   padding: 16px 32px 32px 32px;
+}
+
+.title {
+   font-size: 28px;
+   font-weight: 600;
+   color: #00171f;
+   margin-bottom: 20px;
+}
+
+.searchQuery {
+   width: 100%;
+   padding: 10px 14px;
+   border-radius: 16px;
+
+   border: 1px solid rgba(18, 61, 90, 0.2);
+   outline: none;
+
+   font-size: 15px;
+   color: #123d5a;
+   margin-bottom: 20px;
+}
+
+.sortGroup {
+   display: flex;
+   gap: 8px;
+}
+.leftControls {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.sortBtn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 10px 16px;
+   border-radius: 14px;
+   gap: 10px;
+   /* border: 1px solid rgba(18, 61, 90, 0.2); */
+   background: rgba(6, 110, 96, 0.85);
+
+   font-size: 14px;
+   font-weight: 500;
+   color: #ffffff;
+
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.sortBtn:hover {
+   transform: scale(1.05);
+}
+
+.sortActive {
+   background: rgba(33, 183, 163, 0.45);
+   border: 1px solid rgba(6, 110, 96, 0.45);
+   color: rgba(6, 110, 96);
+
+   /* border-color: transparent; */
+   /* box-shadow: 0 8px 20px rgba(0, 168, 232, 0.35); */
+}
+.toolbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 32px;
+}
+.viewSwitch {
+   display: flex;
+   gap: 6px;
+   padding: 4px;
+   border-radius: 14px;
+   background: rgba(6, 110, 96, 0.15);
+}
+
+.viewBtn {
+   width: 40px;
+   height: 36px;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 10px;
+   background: transparent;
+   color: #0c578a;
+
+   cursor: pointer;
+   transition: background 0.2s ease, color 0.2s ease;
+}
+
+.viewBtn .fa {
+   font-size: 16px;
+   line-height: 1;
+}
+
+.viewActive {
+   background: #0c578ad7;
+   color: #ffffff;
+   box-shadow: 0 6px 16px rgba(0, 168, 232, 0.35);
+}
+
+.createBtn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 14px 26px;
+   min-height: 44px;
+
+   border-radius: 14px;
+   border: none;
+   cursor: pointer;
+
+   background: #0c6eb4d7;
+   color: #ffffff;
+
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1;
+
+   box-shadow: 0 12px 30px rgba(6, 51, 69, 0.35);
+   transition: transform 0.2s ease;
+}
+
+.createBtn:hover {
+   transform: scale(1.05);
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+   gap: 24px;
+}
+.list {
+   grid-template-columns: 1fr;
+}

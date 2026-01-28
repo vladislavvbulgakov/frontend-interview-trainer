@@ -1,0 +1,96 @@
+.card {
+   /* background: linear-gradient(135deg, rgba(0, 52, 89, 0.9), #105e95e7); */
+   background: linear-gradient(180deg, #164a6a, #123d5a);
+
+   border-radius: 16px;
+   padding: 24px;
+   box-shadow: 0 8px 24px rgba(0, 23, 31, 0.08);
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.titleGroup {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.title {
+   font-size: 18px;
+   font-weight: 600;
+   color: #fff;
+}
+.score {
+   font-size: 48px;
+   font-weight: 700;
+   color: var(--color-highlight);
+   margin: 16px 0;
+}
+
+.progress {
+   height: 10px;
+   background: #e5edf3;
+   border-radius: 999px;
+   overflow: hidden;
+}
+
+.fill {
+   height: 100%;
+   background: linear-gradient(90deg, #00a8e8, #007ea7);
+}
+
+.limit {
+   margin-top: 12px;
+   font-size: 13px;
+   color: #51b0f48e;
+}
+
+/* Tooltip */
+
+.tooltip {
+   position: relative;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   background: #e5edf3;
+   font-size: 12px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.tooltipContent {
+   display: none;
+   position: absolute;
+   bottom: 5px;
+   left: 15px;
+   width: 260px;
+   background: #003459;
+   color: #ffffff;
+   padding: 12px;
+   border-radius: 8px;
+   font-size: 12px;
+   z-index: 10;
+}
+
+.tooltip:hover .tooltipContent {
+   display: block;
+}
+.grade {
+   padding: 6px 12px;
+   border-radius: 999px;
+
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: 0.04em;
+
+   color: var(--color-highlight);
+   background: rgba(0, 168, 232, 0.12);
+   border: 1px solid rgba(0, 168, 232, 0.25);
+
+   text-transform: uppercase;
+}

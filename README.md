@@ -99,6 +99,7 @@ FrontendLoop позволяет пользователю проходить си
           - В папке server находится файл .env.example.
             1. Скопируйте его и переименуйте в .env:
             ```code
+            cd ..
             cd server
             cp .env.example .env
             ```
@@ -128,6 +129,8 @@ FrontendLoop позволяет пользователю проходить си
         ```code
         npm install
         npm run dev
+        ...
+        После успешной инициализации данных в БД установите в .env DB_AUTO_SEED = false и DB_RESET = false
         ```
         - После успешного запуска вы увидите сообщение вида:
 

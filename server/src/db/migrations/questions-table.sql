@@ -1,4 +1,4 @@
-CREATE TABLE questions (
+CREATE TABLE IF NOT EXISTS questions(
   id uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
 
   type text NOT NULL CHECK (type IN ('TECHNICAL', 'HR')),
@@ -12,10 +12,19 @@ CREATE TABLE questions (
   topic_id uuid NOT NULL REFERENCES topics(id) ON DELETE CASCADE
 );
 
-ALTER TABLE questions
-ADD CONSTRAINT questions_type_invariants_check
-CHECK (
-  (type = 'HR' AND reference_answer IS NULL AND hr_hint IS NOT NULL)
-  OR
-  (type = 'TECHNICAL' AND hr_hint IS NULL AND reference_answer IS NOT NULL)
-);
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1
+    FROM pg_constraint
+    WHERE conname = 'questions_type_invariants_check'
+  ) THEN
+    ALTER TABLE questions
+    ADD CONSTRAINT questions_type_invariants_check
+    CHECK (
+      (type = 'HR' AND reference_answer IS NULL AND hr_hint IS NOT NULL)
+      OR
+      (type = 'TECHNICAL' AND hr_hint IS NULL AND reference_answer IS NOT NULL)
+    );
+  END IF;
+END $$;
